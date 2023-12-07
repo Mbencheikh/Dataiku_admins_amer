@@ -1,0 +1,50 @@
+{
+  "type": "shell",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "pipeOut": "project_by_size",
+    "autoInferSchema": true,
+    "expectHeaders": false,
+    "sendHeaders": false,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {},
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "project_by_size",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 31,
+    "lastModifiedBy": {
+      "login": "dataiku"
+    },
+    "lastModifiedOn": 1682089620394
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1682046903731
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

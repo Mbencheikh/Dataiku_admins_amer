@@ -1,0 +1,347 @@
+{
+  "dashboardAuthorizations": {
+    "allAuthorized": false,
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "project_info_output_topn_duration",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "Users_by_Group_Name",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "project_info_output_joined",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "dss_jobs_failed",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "scenario_by_age_prep",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "cleanup_out",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ",
+          null
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "connection_permissions",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ",
+          null
+        ]
+      }
+    ]
+  },
+  "exposedObjects": {
+    "objects": []
+  },
+  "projectType": "REGULAR",
+  "projectAppType": "REGULAR",
+  "hasSetupSection": false,
+  "bundleExporterSettings": {
+    "exportOptions": {
+      "exportUploads": false,
+      "exportManagedFS": false,
+      "exportAnalysisModels": false,
+      "exportSavedModels": false,
+      "exportManagedFolders": false,
+      "exportModelEvaluationStores": false,
+      "exportProjectResources": true,
+      "exportLabelingTasks": false,
+      "exportAllInputDatasets": false,
+      "exportAllDatasets": false,
+      "exportAllInputManagedFolders": false,
+      "exportGitRepository": false,
+      "exportInsightsData": false,
+      "useManualPluginsInfo": false,
+      "exportSavedModelsRequiredVersions": false,
+      "exportNotebooksWithOutputs": true,
+      "includedDatasetsData": [],
+      "includedSavedModels": [],
+      "includedModelEvaluationStores": [],
+      "includedManagedFolders": [],
+      "includedCodeStudios": [],
+      "includedLabelingTasks": [],
+      "shareAllInputDatasets": false,
+      "exportForeignObjectsReferences": true
+    }
+  },
+  "owner": "E0196103",
+  "permissionsVersion": "V2",
+  "permissions": [],
+  "additionalDashboardUsers": {
+    "users": []
+  },
+  "tutorialProject": false,
+  "settings": {
+    "flowAnchorSourcesAndSinks": true,
+    "flowDisplaySettings": {
+      "zonesGraphRenderingAlgorithm": "DOT_OLDRANK",
+      "zonesGraphConnectZones": true,
+      "zonesGraphForJobs": true
+    },
+    "gitCommitMode": "AUTO",
+    "disableAutomaticTriggers": false,
+    "integrations": {
+      "integrations": []
+    },
+    "flowBuildSettings": {
+      "mergeSparkPipelines": false,
+      "pruneBeforeSparkPipelines": true,
+      "mergeSqlPipelines": false,
+      "pruneBeforeSqlPipelines": true
+    },
+    "sharingRequestsEnabled": "INHERIT",
+    "limitedVisibilityEnabled": "INHERIT",
+    "accessRequestsEnabled": "INHERIT",
+    "limitsSettings": {
+      "memSampleBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "shakerMemTableBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "attachmentBytes": {
+        "soft": -1,
+        "hard": -1
+      }
+    },
+    "relocationSettings": {
+      "sqlLikeRecipesInitializationMode": "RESOLVED_TABLE_REFERENCES"
+    },
+    "recipeEnginesPreferences": {
+      "forbiddenEngines": [],
+      "enginesPreferenceOrder": [],
+      "forbiddenByRecipeType": {},
+      "preferenceByRecipeType": {}
+    },
+    "codeEnvs": {
+      "python": {
+        "mode": "INHERIT",
+        "preventOverride": false
+      },
+      "r": {
+        "mode": "INHERIT",
+        "preventOverride": false
+      },
+      "julia": {
+        "mode": "INHERIT",
+        "preventOverride": false
+      }
+    },
+    "container": {
+      "containerMode": "NONE"
+    },
+    "datasetsCreationSettings": {
+      "useGlobal": true,
+      "preferedStorageFormats": "CSV_ESCAPING_NOGZIP_FORHIVE,CSV_EXCEL_GZIP,PARQUET_HIVE",
+      "virtualizable": false,
+      "allowUploadsWithoutConnection": true
+    },
+    "hiveEngineCreationSettings": {
+      "useGlobal": true,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sparkEngineCreationSettings": {
+      "useGlobal": true,
+      "executionEngine": "SPARK_SUBMIT",
+      "useGlobalMetastore": false
+    },
+    "impalaEngineCreationSettings": {
+      "useGlobal": true,
+      "streamMode": true
+    },
+    "wikiSettings": {
+      "promoted": false
+    },
+    "cluster": {
+      "clusterMode": "INHERIT"
+    },
+    "k8sCluster": {
+      "clusterMode": "INHERIT"
+    },
+    "virtualWebAppBackendSettings": {
+      "mode": "INHERIT",
+      "preventOverride": false,
+      "infra": {
+        "containerSelection": {
+          "containerMode": "INHERIT"
+        },
+        "overrideGlobalK8sExposition": false,
+        "exposition": {
+          "type": "local_process",
+          "params": {}
+        },
+        "scaling": {
+          "initialReplicas": 1,
+          "progressDeadlineSeconds": 600,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaMetrics": [],
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0,
+          "hpaAnnotations": []
+        },
+        "deploymentModifier": {
+          "config": {}
+        }
+      }
+    },
+    "dkuProperties": []
+  },
+  "name": "Admin Maintenance",
+  "imgPattern": 5,
+  "metrics": {
+    "probes": [],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": []
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "versionTag": {
+    "versionNumber": 40,
+    "lastModifiedBy": {
+      "login": "E0196103"
+    },
+    "lastModifiedOn": 1701962978652,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1675804064793,
+    "extendedProperties": {}
+  },
+  "shortDesc": "The project *Admin Maintenance* was created by Martin Carrillo on Feb 07th 2023",
+  "tags": [
+    "imported"
+  ],
+  "customFields": {},
+  "checklists": {
+    "checklists": [
+      {
+        "title": "Your new project\u0027s Todo",
+        "createdOn": 0,
+        "items": [
+          {
+            "done": true,
+            "text": "Create the project",
+            "createdOn": 1675804064794,
+            "createdBy": "martin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Set a project image (click on the color next to the project title)",
+            "createdOn": 1675804064794,
+            "createdBy": "martin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Import your [first dataset](projects/ADMINMAINTENANCE/datasets/new/)",
+            "createdOn": 1675804064794,
+            "createdBy": "martin",
+            "stateChangedOn": 0
+          },
+          {
+            "done": false,
+            "text": "Organize your work by replacing this with a real todo",
+            "createdOn": 1675804064794,
+            "createdBy": "martin",
+            "stateChangedOn": 0
+          }
+        ]
+      }
+    ]
+  }
+}

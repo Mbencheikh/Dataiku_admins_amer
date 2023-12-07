@@ -1,0 +1,92 @@
+{
+  "name": "User Info",
+  "color": "#D03713",
+  "items": [
+    {
+      "objectId": "compute_group_mapping_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_user_mapping_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_Count_By_Group_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_User_Count_By_Group_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_user_mapping_prepared_joined_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_Users_by_Group_Name_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_group_mapping_prepared_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_user_mapping_prepared_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_user_mapping_by_groups_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "group_mapping",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "user_mapping",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Count_By_Group",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "User_Group_Join",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "user_mapping_prepared_joined",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Users_by_Group_Name",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "group_mapping_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "user_mapping_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "user_mapping_by_groups",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "user_info",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_user_info",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

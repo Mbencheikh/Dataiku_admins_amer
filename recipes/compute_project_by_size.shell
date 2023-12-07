@@ -1,0 +1,8 @@
+#!/bin/sh
+#echo "pipeout"
+
+#value=`du -h /data/dataiku/dss_data/config/projects/ --max-depth=1 | sort -n -r | head -n 10`
+#echo "$value"
+
+#du -hc /data/dataiku/dss_data/config/projects | sort -rh | head -n 10
+sh /data/dataiku/list-images.sh

@@ -1,0 +1,62 @@
+{
+  "type": "step_based",
+  "name": "Delete Exports",
+  "active": false,
+  "runAsUser": "E0196103",
+  "creationTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1678929514876,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1678929514876,
+    "extendedProperties": {}
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_remove-old-exports",
+        "type": "runnable",
+        "name": "Delete old Exports",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_remove-old-exports",
+          "config": {
+            "age": 15,
+            "simulate": false
+          },
+          "adminConfig": {},
+          "proceedOnFailure": false
+        }
+      }
+    ]
+  },
+  "automationLocal": false,
+  "customFields": {}
+}

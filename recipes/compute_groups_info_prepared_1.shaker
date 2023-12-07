@@ -1,0 +1,127 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 10,
+        "inCol": "object",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": true,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "object"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "object_mayManageClusters": 195,
+    "object_mayCreateProjects": 195,
+    "object_mayWriteInRootProjectFolder": 270,
+    "object_mayCreateWorkspaces": 210,
+    "object_mayCreateCodeEnvs": 195,
+    "object_admin": 105,
+    "object_mayCreatePublishedProjects": 263,
+    "object_mayEditLibFolders": 195,
+    "object_name": 197,
+    "object_sourceType": 143,
+    "object_mayDevelopPlugins": 195,
+    "object_mayWriteSafeCode": 188,
+    "object_mayCreateActiveWebContent": 255,
+    "object_mayCreateClusters": 195,
+    "object_mayCreateAuthenticatedConnections": 300,
+    "object_mayCreateProjectsFromMacros": 270,
+    "object_mayCreateProjectsFromTemplates": 293,
+    "object_canObtainAPITicketFromCookiesForGroupsRegex": 300,
+    "object_mayManageCodeEnvs": 195,
+    "object_ldapGroupNames": 197,
+    "object_mayCreatePublishedAPIServices": 285,
+    "object_mayShareToWorkspaces": 218,
+    "object_mayViewIndexedHiveConnections": 285,
+    "object_mayCreateProjectsFromDataikuApps": 300,
+    "object_description": 300,
+    "object_mayWriteUnsafeCode": 203,
+    "object": 300,
+    "object_mayManageUDM": 158
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

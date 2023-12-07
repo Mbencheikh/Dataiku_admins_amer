@@ -1,0 +1,174 @@
+{
+  "computedColumns": [],
+  "enableAutoCastInJoinConditions": false,
+  "engineParams": {
+    "hive": {
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2",
+      "hiveconf": [],
+      "inheritConf": "default",
+      "skipPrerunValidate": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "executionEngine": "SPARK_SUBMIT",
+      "overwriteOutputSchema": false,
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "autoModeRepartitionInto": 10,
+        "map": {},
+        "mode": "AUTO"
+      },
+      "skipPrerunValidate": false,
+      "sparkConfig": {
+        "conf": [],
+        "inheritConf": "default"
+      },
+      "useGlobalMetastore": false
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    }
+  },
+  "joins": [
+    {
+      "conditionsMode": "AND",
+      "on": [
+        {
+          "column1": {
+            "name": "groups",
+            "table": 0
+          },
+          "column2": {
+            "name": "Group Name",
+            "table": 1
+          },
+          "type": "EQ"
+        }
+      ],
+      "outerJoinOnTheLeft": true,
+      "rightLimit": {
+        "decisionColumn": {},
+        "enabled": false,
+        "maxMatches": 1,
+        "type": "KEEP_LARGEST"
+      },
+      "table1": 0,
+      "table2": 1,
+      "type": "LEFT"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "groups",
+            "type": "string"
+          },
+          {
+            "name": "login_count",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          },
+          {
+            "name": "Group Name",
+            "type": "string"
+          },
+          {
+            "name": "Group Description",
+            "type": "string"
+          },
+          {
+            "name": "Type",
+            "type": "string"
+          },
+          {
+            "name": "LDAP Group",
+            "type": "string"
+          },
+          {
+            "name": "is_Administrator",
+            "type": "boolean"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "resolvedSelectedColumns": [],
+  "selectedColumns": [
+    {
+      "name": "groups",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "login_count",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "count",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "Group Name",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "Group Description",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "Type",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "LDAP Group",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "name": "is_Administrator",
+      "table": 1,
+      "type": "boolean"
+    }
+  ],
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 0,
+      "originLabel": "user_mapping_by_groups",
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 1,
+      "originLabel": "group_mapping_prepared",
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      }
+    }
+  ]
+}

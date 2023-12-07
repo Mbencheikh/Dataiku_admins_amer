@@ -1,0 +1,34 @@
+{
+    "pages": [
+        {
+            "id": "UalaJk6",
+            "grid": {
+                "tiles": []
+            },
+            "showTitle": false
+        }
+    ],
+    "owner": "martin",
+    "listed": true,
+    "name": "Admin Maintenance's default dashboard",
+    "showGrid": true,
+    "versionTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "martin"
+        },
+        "lastModifiedOn": 1675804064798
+    },
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "martin"
+        },
+        "lastModifiedOn": 1675804064798
+    },
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "uiData": {
+    "mode": "\u0026\u0026",
+    "$latestOperator": "\u0026\u0026",
+    "$filterOptions": "rules",
+    "conditions": [
+      {
+        "input": "state",
+        "col": "job_id",
+        "string": "FAILED",
+        "$showList": false,
+        "num": 0,
+        "operator": "\u003d\u003d [string]"
+      }
+    ]
+  },
+  "$status": {},
+  "distinct": false,
+  "enabled": true
+}

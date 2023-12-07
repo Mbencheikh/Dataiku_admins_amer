@@ -1,0 +1,50 @@
+{
+  "type": "shell",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "pipeOut": "cleanup_out",
+    "autoInferSchema": true,
+    "expectHeaders": false,
+    "sendHeaders": false,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {},
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "cleanup_out",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1680134657937
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1680132777450
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

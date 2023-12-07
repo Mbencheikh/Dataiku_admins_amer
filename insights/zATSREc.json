@@ -1,0 +1,104 @@
+{
+  "type": "dataset_table",
+  "params": {
+    "datasetSmartName": "Users_by_Group_Name",
+    "shakerScript": {
+      "steps": [],
+      "maxProcessedMemTableBytes": -1,
+      "columnsSelection": {
+        "mode": "ALL"
+      },
+      "columnWidthsByName": {
+        "Group Name": 197,
+        "Type": 100,
+        "Description": 300,
+        "Administrator": 113,
+        "login_count": 100,
+        "Nb. users": 100
+      },
+      "columnUseScientificNotationByName": {},
+      "coloring": {
+        "scheme": "MEANING_AND_STATUS",
+        "individualColumns": [],
+        "valueColoringMode": "HASH"
+      },
+      "sorting": [],
+      "analysisColumnData": {},
+      "explorationSampling": {
+        "selection": {
+          "maxRecordsForDisplay": -1,
+          "maxStoredBytes": 104857600,
+          "timeout": -1,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "maxRecords": 10000,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "vizSampling": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "exploreUIParams": {
+        "autoRefresh": true
+      },
+      "globalSearchQuery": "",
+      "explorationFilters": [],
+      "previewMode": "ALL_ROWS"
+    }
+  },
+  "owner": "martin",
+  "listed": false,
+  "name": "Users_by_Group_Name table",
+  "dashboardCreationId": "R7DpCwJ",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1682096647141
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1682096647141
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

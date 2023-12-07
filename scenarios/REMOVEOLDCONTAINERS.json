@@ -1,0 +1,67 @@
+{
+  "type": "step_based",
+  "name": "Remove Old Containers",
+  "active": false,
+  "runAsUser": "E0196103",
+  "creationTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1678929908520,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1678929908520,
+    "extendedProperties": {}
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_remove-old-container-images",
+        "type": "runnable",
+        "name": "Delete Old Container Images",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_remove-old-container-images",
+          "config": {
+            "rm_dss_images": true,
+            "rm_none_images": true,
+            "dont_guess_image_name": false,
+            "custom_image_name": "dku-exec-something",
+            "use_custom_host": false,
+            "perform_deletion": true,
+            "force_rm": false
+          },
+          "adminConfig": {},
+          "proceedOnFailure": false
+        }
+      }
+    ]
+  },
+  "automationLocal": false,
+  "customFields": {}
+}

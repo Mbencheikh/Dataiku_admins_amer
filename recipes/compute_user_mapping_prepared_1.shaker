@@ -1,0 +1,148 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "object",
+        "nullAsEmpty": true,
+        "prefixOutputs": false,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "login",
+          "groups",
+          "sourceType",
+          "enabled"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ArrayFold",
+      "params": {
+        "column": "groups"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "object_userProfile": 150,
+    "objectImgHash": 113,
+    "object_npsSurveySettings": 300,
+    "displayName": 300,
+    "groups_Dataiku_SamsHW": 173,
+    "groups_Digital_Finance_Group": 225,
+    "object_activeWebSocketSesssions": 248,
+    "object_login": 105,
+    "login": 100,
+    "groups_Dataiku_Training_TranspFnP": 263,
+    "userProfile": 127,
+    "enabled": 100,
+    "groups_readers": 120,
+    "groups_administrators": 173,
+    "object_sourceType": 143,
+    "object_displayName": 300,
+    "object_objectImgHash": 165,
+    "groups_wmt-train-dataiku": 195,
+    "groups_data_team": 135,
+    "object_email": 300,
+    "email": 300,
+    "groups_powerbiadmins": 165,
+    "groups_wmt-trainee-dataiku": 210,
+    "groups_Tim-TrainingGroup": 195,
+    "object_enabled": 120,
+    "activeWebSocketSesssions": 195,
+    "groups_3": 106,
+    "groups_1": 113,
+    "groups": 239,
+    "groups_2": 106,
+    "groups_0": 197,
+    "npsSurveySettings": 300,
+    "sourceType": 100,
+    "groups_wmt-avt-dataiku": 180,
+    "object_groups": 239,
+    "groups_GDC_OPS": 120,
+    "object": 560
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

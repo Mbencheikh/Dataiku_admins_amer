@@ -1,0 +1,200 @@
+{
+  "type": "dataset_table",
+  "params": {
+    "datasetSmartName": "dss_jobs_failed",
+    "shakerScript": {
+      "steps": [],
+      "maxProcessedMemTableBytes": -1,
+      "columnsSelection": {
+        "mode": "SELECT",
+        "list": [
+          {
+            "name": "job_project_key",
+            "d": true
+          },
+          {
+            "name": "job_id",
+            "d": true
+          },
+          {
+            "name": "time_start",
+            "d": false
+          },
+          {
+            "name": "job_duration",
+            "d": false
+          },
+          {
+            "name": "time_end",
+            "d": true
+          },
+          {
+            "name": "stable_state",
+            "d": false
+          },
+          {
+            "name": "state",
+            "d": true
+          },
+          {
+            "name": "warnings_count",
+            "d": false
+          },
+          {
+            "name": "scenario_project_key",
+            "d": false
+          },
+          {
+            "name": "scenario_id",
+            "d": true
+          },
+          {
+            "name": "scenario_run_id",
+            "d": false
+          },
+          {
+            "name": "step_id",
+            "d": false
+          },
+          {
+            "name": "step_run_id",
+            "d": false
+          },
+          {
+            "name": "job_def_type",
+            "d": false
+          },
+          {
+            "name": "job_def_initiator",
+            "d": false
+          },
+          {
+            "name": "job_def_initiated",
+            "d": false
+          },
+          {
+            "name": "job_def_refresh_metastore",
+            "d": false
+          },
+          {
+            "name": "job_def_outputs",
+            "d": false
+          },
+          {
+            "name": "job_def_trigger_type",
+            "d": false
+          }
+        ]
+      },
+      "columnWidthsByName": {
+        "job_project_key": 176,
+        "job_id": 300,
+        "time_start": 183,
+        "job_duration": 105,
+        "time_end": 183,
+        "stable_state": 105,
+        "state": 100,
+        "warnings_count": 120,
+        "scenario_project_key": 165,
+        "scenario_id": 100,
+        "scenario_run_id": 128,
+        "step_id": 148,
+        "step_run_id": 106,
+        "job_def_type": 197,
+        "job_def_initiator": 143,
+        "job_def_initiated": 183,
+        "job_def_refresh_metastore": 203,
+        "job_def_outputs": 300,
+        "job_def_trigger_type": 165
+      },
+      "columnUseScientificNotationByName": {},
+      "coloring": {
+        "scheme": "MEANING_AND_STATUS",
+        "individualColumns": [],
+        "valueColoringMode": "HASH"
+      },
+      "sorting": [
+        {
+          "column": "time_end",
+          "ascending": false
+        }
+      ],
+      "analysisColumnData": {},
+      "explorationSampling": {
+        "selection": {
+          "maxRecordsForDisplay": -1,
+          "maxStoredBytes": 104857600,
+          "timeout": -1,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "maxRecords": 10000,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "vizSampling": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "exploreUIParams": {
+        "autoRefresh": true
+      },
+      "globalSearchQuery": "",
+      "explorationFilters": [],
+      "previewMode": "ALL_ROWS"
+    }
+  },
+  "owner": "martin",
+  "listed": false,
+  "name": "Jobs with Fail Status",
+  "dashboardCreationId": "R7DpCwJ",
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1683051486614
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1683050768307
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

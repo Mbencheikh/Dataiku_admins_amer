@@ -1,0 +1,50 @@
+{
+  "type": "shell",
+  "neverRecomputeExistingPartitions": false,
+  "optionalDependencies": false,
+  "params": {
+    "pipeOut": "docker-images",
+    "autoInferSchema": true,
+    "expectHeaders": false,
+    "sendHeaders": false,
+    "skipPrerunValidate": false
+  },
+  "customMeta": {
+    "kv": {}
+  },
+  "redispatchPartitioning": false,
+  "maxRunningActivities": 0,
+  "variables": {},
+  "dkuProperties": [],
+  "inputs": {},
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "docker-images",
+          "appendMode": false
+        }
+      ]
+    }
+  },
+  "labels": [],
+  "versionTag": {
+    "versionNumber": 32,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1682106648615
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1681928571131
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

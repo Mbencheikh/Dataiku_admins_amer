@@ -1,0 +1,65 @@
+{
+  "computedColumns": [],
+  "denseRank": false,
+  "duplicateCount": true,
+  "engineParams": {
+    "hive": {
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2",
+      "hiveconf": [],
+      "inheritConf": "default",
+      "skipPrerunValidate": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "executionEngine": "SPARK_SUBMIT",
+      "overwriteOutputSchema": false,
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "autoModeRepartitionInto": 10,
+        "map": {},
+        "mode": "AUTO"
+      },
+      "skipPrerunValidate": false,
+      "sparkConfig": {
+        "conf": [],
+        "inheritConf": "default"
+      },
+      "useGlobalMetastore": false
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    }
+  },
+  "firstRows": 30,
+  "keys": [],
+  "lastRows": 0,
+  "orders": [
+    {
+      "column": "days_since_last_commit",
+      "desc": true
+    }
+  ],
+  "outputColumnNameOverrides": {},
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "rank": false,
+  "retrievedColumns": [
+    "projectKey",
+    "tutorialProject",
+    "name",
+    "projectStatus",
+    "ownerDisplayName",
+    "last_commit_by",
+    "days_since_last_commit"
+  ],
+  "retrievedColumnsSelectionMode": "EXPLICIT",
+  "rowNumber": false
+}

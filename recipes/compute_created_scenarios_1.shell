@@ -1,0 +1,1 @@
+for dir in /data/dataiku/dss_data/config/projects/*; do (cd "$dir" && git log -g --grep="Created scenario" --pretty=format:"%h%x09%an%x09%ad%x09%s"); done 2> /dev/null

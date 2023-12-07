@@ -1,0 +1,276 @@
+{
+  "computedColumns": [],
+  "enableAutoCastInJoinConditions": false,
+  "engineParams": {
+    "hive": {
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2",
+      "hiveconf": [],
+      "inheritConf": "default",
+      "skipPrerunValidate": false
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "executionEngine": "SPARK_SUBMIT",
+      "overwriteOutputSchema": false,
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "autoModeRepartitionInto": 10,
+        "map": {},
+        "mode": "AUTO"
+      },
+      "skipPrerunValidate": false,
+      "sparkConfig": {
+        "conf": [],
+        "inheritConf": "default"
+      },
+      "useGlobalMetastore": false
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    }
+  },
+  "joins": [
+    {
+      "conditionsMode": "AND",
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "column2": {
+            "name": "project_key",
+            "table": 1
+          },
+          "dateDiffUnit": "SECOND",
+          "type": "EQ"
+        }
+      ],
+      "outerJoinOnTheLeft": true,
+      "table1": 0,
+      "table2": 1,
+      "type": "LEFT"
+    },
+    {
+      "conditionsMode": "AND",
+      "on": [
+        {
+          "column1": {
+            "name": "author_last",
+            "table": 1
+          },
+          "column2": {
+            "name": "object_login",
+            "table": 2
+          },
+          "dateDiffUnit": "SECOND",
+          "type": "EQ"
+        }
+      ],
+      "outerJoinOnTheLeft": true,
+      "rightLimit": {},
+      "table1": 1,
+      "table2": 2,
+      "type": "LEFT"
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "name": "projectAppType",
+            "type": "string"
+          },
+          {
+            "name": "tutorialProject",
+            "type": "boolean"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "projectStatus",
+            "type": "string"
+          },
+          {
+            "name": "ownerDisplayName",
+            "type": "string"
+          },
+          {
+            "name": "versionTag_lastModifiedBy_login",
+            "type": "string"
+          },
+          {
+            "name": "versionTag_lastModifiedOn",
+            "type": "string"
+          },
+          {
+            "name": "Days since Modified",
+            "type": "bigint"
+          },
+          {
+            "name": "creationTag_lastModifiedBy_login",
+            "type": "string"
+          },
+          {
+            "name": "creationTag_lastModifiedOn",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "shortDesc",
+            "type": "string"
+          },
+          {
+            "name": "last_commit_by",
+            "type": "string"
+          },
+          {
+            "name": "days_since_last_commit",
+            "type": "bigint"
+          },
+          {
+            "name": "commit_by_displayName",
+            "type": "string"
+          },
+          {
+            "name": "commit_by_email",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "resolvedSelectedColumns": [],
+  "selectedColumns": [
+    {
+      "name": "projectKey",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "projectAppType",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "tutorialProject",
+      "table": 0,
+      "type": "boolean"
+    },
+    {
+      "name": "name",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "projectStatus",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "ownerDisplayName",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "versionTag_lastModifiedBy_login",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "versionTag_lastModifiedOn",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "Days since Modified",
+      "table": 0,
+      "type": "bigint"
+    },
+    {
+      "name": "creationTag_lastModifiedBy_login",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "creationTag_lastModifiedOn",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "description",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "name": "shortDesc",
+      "table": 0,
+      "type": "string"
+    },
+    {
+      "alias": "last_commit_by",
+      "name": "author_last",
+      "table": 1,
+      "type": "string"
+    },
+    {
+      "alias": "days_since_last_commit",
+      "name": "days_since_last_commit_min",
+      "table": 1,
+      "type": "bigint"
+    },
+    {
+      "alias": "commit_by_displayName",
+      "name": "object_displayName",
+      "table": 2,
+      "type": "string"
+    },
+    {
+      "alias": "commit_by_email",
+      "name": "object_email",
+      "table": 2,
+      "type": "string"
+    }
+  ],
+  "virtualInputs": [
+    {
+      "autoSelectColumns": false,
+      "computedColumns": [],
+      "index": 0,
+      "originLabel": "project_info_output",
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      }
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 1,
+      "outputColumnsSelectionMode": "MANUAL"
+    },
+    {
+      "autoSelectColumns": false,
+      "index": 2,
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {}
+    }
+  ]
+}

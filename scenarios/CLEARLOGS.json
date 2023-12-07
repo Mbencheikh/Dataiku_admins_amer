@@ -1,0 +1,114 @@
+{
+  "type": "step_based",
+  "name": "Clear Logs",
+  "active": false,
+  "runAsUser": "E0196103",
+  "creationTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1678929410968,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1678929410968,
+    "extendedProperties": {}
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-job-logs",
+        "type": "runnable",
+        "name": "Delete Job Logs",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-job-logs",
+          "config": {
+            "age": 15,
+            "performDeletion": true
+          },
+          "adminConfig": {
+            "allProjects": true
+          },
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-scenario-logs",
+        "type": "runnable",
+        "name": "Delete Scenario Logs",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-scenario-logs",
+          "config": {
+            "age": 15,
+            "performDeletion": true
+          },
+          "adminConfig": {
+            "allProjects": true
+          },
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-continuous-activity-logs",
+        "type": "runnable",
+        "name": "Clear continuous activities logs",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-continuous-activity-logs",
+          "config": {
+            "age": 15,
+            "performDeletion": true
+          },
+          "adminConfig": {
+            "allProjects": true
+          },
+          "proceedOnFailure": false
+        }
+      }
+    ]
+  },
+  "automationLocal": false,
+  "customFields": {}
+}

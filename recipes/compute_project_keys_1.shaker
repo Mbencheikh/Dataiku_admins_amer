@@ -1,0 +1,190 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 1,
+        "inCol": "object",
+        "nullAsEmpty": true,
+        "prefixOutputs": false,
+        "flattenArrays": true,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "projectKey"
+        ],
+        "keep": true,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "tutorialProject": 128,
+    "object_imgPattern": 143,
+    "object_canManageExposedElements": 248,
+    "object_canShareToWorkspaces": 218,
+    "canShareToWorkspaces": 165,
+    "object_isProjectAdmin": 173,
+    "projectType": 127,
+    "metricsChecks": 300,
+    "showInitials": 105,
+    "canRunScenarios": 128,
+    "permissionsVersion": 150,
+    "object_sparkPipelinesEnabled": 225,
+    "projectKey": 232,
+    "object_canManageDashboardAuthorizations": 300,
+    "object_canReadDashboards": 195,
+    "object_showInitials": 158,
+    "object_canWriteProjectContent": 233,
+    "object_canExportDatasetsData": 225,
+    "imgPattern": 100,
+    "canManageAdditionalDashboardUsers": 263,
+    "canExportDatasetsData": 173,
+    "object_checklists": 300,
+    "object_disableAutomaticTriggers": 248,
+    "object_isProjectImg": 158,
+    "versionTag": 300,
+    "object_projectAppType": 173,
+    "object_defaultImgColor": 180,
+    "object_creationTag": 300,
+    "tags": 300,
+    "name": 300,
+    "canModerateDashboards": 173,
+    "object_projectType": 150,
+    "shortDesc": 300,
+    "metrics": 300,
+    "object_generatingAppId": 180,
+    "object": 300,
+    "checklists": 300,
+    "object_canModerateDashboards": 225,
+    "objectImgHash": 141,
+    "object_tags": 300,
+    "canReadDashboards": 143,
+    "customFields": 232,
+    "object_versionTag": 300,
+    "description": 300,
+    "canWriteDashboards": 150,
+    "isProjectImg": 105,
+    "object_metrics": 300,
+    "object_tutorialId": 169,
+    "commitMode": 100,
+    "canManageDashboardAuthorizations": 255,
+    "ownerDisplayName": 300,
+    "object_name": 300,
+    "object_objectImgHash": 165,
+    "object_canRunScenarios": 180,
+    "projectAppType": 120,
+    "object_shortDesc": 300,
+    "canWriteProjectContent": 180,
+    "object_canReadProjectContent": 225,
+    "object_canWriteDashboards": 203,
+    "ownerLogin": 100,
+    "defaultImgColor": 128,
+    "object_projectStatus": 165,
+    "generatingAppId": 141,
+    "object_imgColor": 128,
+    "imgColor": 100,
+    "object_customFields": 232,
+    "canExecuteApp": 113,
+    "object_ownerDisplayName": 300,
+    "object_contributors": 158,
+    "object_canExecuteApp": 165,
+    "projectStatus": 113,
+    "isProjectAdmin": 120,
+    "object_projectKey": 232,
+    "object_permissionsVersion": 203,
+    "canManageExposedElements": 195,
+    "canReadProjectContent": 173,
+    "object_commitMode": 143,
+    "generatingAppVersion": 165,
+    "object_generatingAppVersion": 218,
+    "object_metricsChecks": 300,
+    "object_sqlPipelinesEnabled": 210,
+    "object_description": 300,
+    "sparkPipelinesEnabled": 173,
+    "object_canManageAdditionalDashboardUsers": 300,
+    "contributors": 105,
+    "sqlPipelinesEnabled": 158,
+    "object_ownerLogin": 143,
+    "disableAutomaticTriggers": 195,
+    "creationTag": 300,
+    "object_tutorialProject": 180,
+    "tutorialId": 169
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

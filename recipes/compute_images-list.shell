@@ -1,0 +1,5 @@
+#!/bin/bash
+set -x #echo on
+#echo 'pipeout','pipeout2'
+#ls $PWD
+du -a /var | sort -n -r | head -n 10

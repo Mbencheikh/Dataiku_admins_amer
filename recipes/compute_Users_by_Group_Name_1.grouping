@@ -1,0 +1,289 @@
+{
+  "preFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "enabled",
+          "col": "sourceType",
+          "num": 0,
+          "operator": "true"
+        }
+      ]
+    },
+    "$status": {},
+    "distinct": false,
+    "enabled": true
+  },
+  "keys": [
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Group Name",
+      "count": false,
+      "$idx": 4,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Type",
+      "count": false,
+      "$idx": 5,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Group Description",
+      "count": false,
+      "$idx": 4,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false,
+      "orderColumn": "login",
+      "concatSeparator": ","
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "is_Administrator",
+      "count": false,
+      "$idx": 5,
+      "sum": false,
+      "concat": false,
+      "type": "boolean",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false,
+      "orderColumn": "login",
+      "concatSeparator": ","
+    },
+    {
+      "last": false,
+      "max": false,
+      "column": "groups",
+      "count": false,
+      "$idx": 2,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "sourceType",
+      "count": false,
+      "$idx": 1,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "values": [
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "login",
+      "count": true,
+      "$idx": 0,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "enabled",
+      "count": false,
+      "$idx": 1,
+      "sum": false,
+      "concat": false,
+      "type": "boolean",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "stddev": false,
+      "first": false
+    },
+    {
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "LDAP Group",
+      "count": false,
+      "$idx": 2,
+      "sum": false,
+      "concat": false,
+      "type": "string",
+      "concatDistinct": false,
+      "sum2": false,
+      "min": false,
+      "countDistinct": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
+    }
+  ],
+  "globalCount": true,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "enlargeYourBits": true,
+  "outputColumnNameOverrides": {
+    "Group Description_max": "Description",
+    "Group Description": "Description",
+    "count": "Nb. users",
+    "is_Administrator": "Administrator",
+    "is_Administrator_max": "Administrator"
+  },
+  "computedColumns": [],
+  "postFilter": {
+    "uiData": {
+      "mode": "\u0026\u0026",
+      "conditions": [
+        {
+          "input": "Group Name",
+          "col": "Type",
+          "num": 0,
+          "operator": "contains"
+        }
+      ]
+    },
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Group Name",
+            "type": "string"
+          },
+          {
+            "name": "Type",
+            "type": "string"
+          },
+          {
+            "name": "Group Description",
+            "type": "string"
+          },
+          {
+            "name": "is_Administrator",
+            "type": "boolean"
+          },
+          {
+            "name": "groups",
+            "type": "string"
+          },
+          {
+            "name": "sourceType",
+            "type": "string"
+          },
+          {
+            "name": "login_count",
+            "type": "bigint"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  }
+}

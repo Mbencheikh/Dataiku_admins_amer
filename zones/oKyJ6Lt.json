@@ -1,0 +1,44 @@
+{
+  "name": "Connections",
+  "color": "#C54F00",
+  "items": [
+    {
+      "objectId": "compute_project_connections_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "project_connections",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "list_connections",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "list_conn_filtered",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_list_conn_filtered_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_list_connections_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "connection_list",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_list_conn_filtered_2",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "JSONFlattener",
+      "params": {
+        "maxDepth": 10,
+        "inCol": "object",
+        "nullAsEmpty": true,
+        "prefixOutputs": true,
+        "flattenArrays": false,
+        "separator": "_"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "object_name",
+          "object_description",
+          "object_admin",
+          "object_ldapGroupNames",
+          "object_sourceType"
+        ],
+        "keep": true,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "object_name",
+            "to": "Group Name"
+          },
+          {
+            "from": "object_description",
+            "to": "Group Description"
+          },
+          {
+            "from": "object_sourceType",
+            "to": "Type"
+          },
+          {
+            "from": "object_ldapGroupNames",
+            "to": "LDAP Group"
+          },
+          {
+            "from": "object_admin",
+            "to": "is_Administrator"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "object_mayManageClusters": 195,
+    "object_mayCreateProjects": 195,
+    "object_mayWriteInRootProjectFolder": 270,
+    "object_mayCreateWorkspaces": 210,
+    "object_mayCreateCodeEnvs": 195,
+    "object_admin": 105,
+    "object_mayCreatePublishedProjects": 263,
+    "object_mayEditLibFolders": 195,
+    "object_name": 197,
+    "object_sourceType": 143,
+    "object_mayDevelopPlugins": 195,
+    "object_mayWriteSafeCode": 188,
+    "object_mayCreateActiveWebContent": 255,
+    "object_mayCreateClusters": 195,
+    "object_mayCreateAuthenticatedConnections": 300,
+    "object_mayCreateProjectsFromMacros": 270,
+    "object_mayCreateProjectsFromTemplates": 293,
+    "object_canObtainAPITicketFromCookiesForGroupsRegex": 300,
+    "Group Description": 246,
+    "object_mayManageCodeEnvs": 195,
+    "is_Administrator": 135,
+    "object_ldapGroupNames": 173,
+    "object_mayCreatePublishedAPIServices": 285,
+    "object_mayShareToWorkspaces": 218,
+    "object_mayViewIndexedHiveConnections": 285,
+    "Type": 100,
+    "object_mayCreateProjectsFromDataikuApps": 300,
+    "Group Name": 197,
+    "LDAP Group": 141,
+    "object_description": 246,
+    "object_mayWriteUnsafeCode": 203,
+    "object": 300,
+    "object_mayManageUDM": 158
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

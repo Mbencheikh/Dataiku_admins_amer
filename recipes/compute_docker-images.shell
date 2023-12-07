@@ -1,0 +1,7 @@
+""#!/bin/sh
+#echo "pipeout"
+# /data/dataiku/list-images.sh
+
+#value=`cat /data/dataiku/list.txt`
+value=`du -a /var`
+echo "$value"

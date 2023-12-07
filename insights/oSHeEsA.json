@@ -1,0 +1,135 @@
+{
+  "type": "dataset_table",
+  "params": {
+    "datasetSmartName": "scenario_by_age_prep",
+    "shakerScript": {
+      "steps": [],
+      "maxProcessedMemTableBytes": -1,
+      "columnsSelection": {
+        "mode": "SELECT",
+        "list": [
+          {
+            "name": "job_project_key",
+            "d": true
+          },
+          {
+            "name": "scenario_id",
+            "d": true
+          },
+          {
+            "name": "time_start_min",
+            "d": true
+          },
+          {
+            "name": "days_since",
+            "d": true
+          },
+          {
+            "name": "time_end_max",
+            "d": true
+          },
+          {
+            "name": "count",
+            "d": true
+          }
+        ]
+      },
+      "columnWidthsByName": {
+        "job_project_key": 176,
+        "scenario_id": 100,
+        "time_start_min": 183,
+        "days_since": 100,
+        "time_end_max": 183,
+        "count": 100
+      },
+      "columnUseScientificNotationByName": {},
+      "coloring": {
+        "scheme": "MEANING_AND_STATUS",
+        "individualColumns": [],
+        "valueColoringMode": "HASH"
+      },
+      "sorting": [
+        {
+          "column": "time_end_max",
+          "ascending": false
+        }
+      ],
+      "analysisColumnData": {},
+      "explorationSampling": {
+        "selection": {
+          "maxRecordsForDisplay": -1,
+          "maxStoredBytes": 104857600,
+          "timeout": -1,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "maxRecords": 10000,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "vizSampling": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "exploreUIParams": {
+        "autoRefresh": true
+      },
+      "globalSearchQuery": "",
+      "explorationFilters": [],
+      "previewMode": "ALL_ROWS"
+    }
+  },
+  "owner": "martin",
+  "listed": false,
+  "name": "scenario_by_age_prep table",
+  "dashboardCreationId": "R7DpCwJ",
+  "versionTag": {
+    "versionNumber": 3,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1683056023279
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "martin"
+    },
+    "lastModifiedOn": 1683051542191
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

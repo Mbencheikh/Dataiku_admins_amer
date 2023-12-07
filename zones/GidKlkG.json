@@ -1,0 +1,92 @@
+{
+  "name": "Projects",
+  "color": "#31439C",
+  "items": [
+    {
+      "objectId": "project_info_output",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "project_info_output_topn_duration",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "list_of_projects_prepared_by_ownerLogin",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "project_by_user",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "projects_count_by_User",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "list_of_projects_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "project_info",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "project_keys",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "list_of_projects",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_list_of_projects_prepared_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_list_of_projects_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_project_info_output_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_project_keys_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_project_by_user_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_projects_count_by_User_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_project_info_output_topn_duration_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_project_info_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_list_of_projects_prepared_by_ownerLogin_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_project_info_output_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "project_info_output_joined",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

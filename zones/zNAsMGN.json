@@ -1,0 +1,61 @@
+{
+  "name": "Job/Scenarios",
+  "color": "#4B8021",
+  "items": [
+    {
+      "objectId": "dss_jobs_copy",
+      "objectType": "DATASET",
+      "projectKey": "ADMINREPORTING"
+    },
+    {
+      "objectId": "created_scenarios",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_created_scenarios_1",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_jobs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "dss_jobs_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_jobs_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_dss_jobs_failed",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_jobs_failed",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_dss_jobs_grouped_by_project_job",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "dss_jobs_grouped_by_project_scenario",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "scenario_by_age_prep",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_scenario_by_age_prep",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

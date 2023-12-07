@@ -1,0 +1,32 @@
+{
+  "name": "Recipes",
+  "color": "#F9BE40",
+  "items": [
+    {
+      "objectId": "list_recipes",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_list_recipes",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "DSSLOCALJOBS",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_DSSLOCALJOBS",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "DSSLOCALJOBS_DEV",
+      "objectType": "DATASET"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

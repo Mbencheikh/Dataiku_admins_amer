@@ -1,0 +1,61 @@
+{
+  "type": "DASH",
+  "hasLegacyBackendURL": false,
+  "params": {
+    "autoStartBackend": false,
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "nbProcesses": 1,
+    "serveLocally": true,
+    "runAs": "E0196103",
+    "infra": {
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "overrideGlobalK8sExposition": false,
+      "exposition": {
+        "type": "local_process",
+        "params": {}
+      },
+      "scaling": {
+        "initialReplicas": 1,
+        "progressDeadlineSeconds": 600,
+        "hpa": false,
+        "hpaTargetCPUPercent": 0,
+        "hpaMetrics": [],
+        "hpaMinPods": 0,
+        "hpaMaxPods": 0,
+        "hpaAnnotations": []
+      },
+      "deploymentModifier": {
+        "config": {}
+      }
+    },
+    "forceAuthentication": false
+  },
+  "config": {},
+  "name": "test",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "bhavik"
+    },
+    "lastModifiedOn": 1697161623729,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "bhavik"
+    },
+    "lastModifiedOn": 1697161623729,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  },
+  "customFields": {},
+  "isVirtual": false
+}

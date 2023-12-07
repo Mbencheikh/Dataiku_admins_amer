@@ -1,0 +1,203 @@
+{
+    "pages": [
+        {
+            "id": "AXLM8GB",
+            "grid": {
+                "tiles": [
+                    {
+                        "tileType": "INSIGHT",
+                        "box": {
+                            "top": 0,
+                            "left": 0,
+                            "width": 12,
+                            "height": 5
+                        },
+                        "clickAction": "DO_NOTHING",
+                        "tileParams": {
+                            "showXAxis": true,
+                            "showYAxis": true,
+                            "showLegend": false,
+                            "showTooltips": true,
+                            "autoPlayAnimation": true
+                        },
+                        "autoLoad": true,
+                        "showTitle": "YES",
+                        "title": "Tutorial Projects?",
+                        "insightId": "0wu0vKp",
+                        "insightType": "chart",
+                        "displayMode": "INSIGHT",
+                        "resizeImageMode": "FIT_SIZE"
+                    },
+                    {
+                        "tileType": "INSIGHT",
+                        "box": {
+                            "top": 5,
+                            "left": 0,
+                            "width": 12,
+                            "height": 4
+                        },
+                        "clickAction": "OPEN_INSIGHT",
+                        "tileParams": {
+                            "viewKind": "EXPLORE",
+                            "showName": true,
+                            "showDescription": true,
+                            "showCustomFields": true,
+                            "showStorageType": false,
+                            "showMeaning": false,
+                            "showProgressBar": false
+                        },
+                        "autoLoad": true,
+                        "showTitle": "YES",
+                        "insightId": "BMS3Z17",
+                        "insightType": "dataset_table",
+                        "displayMode": "INSIGHT",
+                        "resizeImageMode": "FIT_SIZE"
+                    }
+                ]
+            },
+            "title": "Project Details",
+            "showTitle": false
+        },
+        {
+            "id": "BtSKyvo",
+            "grid": {
+                "tiles": [
+                    {
+                        "tileType": "INSIGHT",
+                        "box": {
+                            "top": 0,
+                            "left": 0,
+                            "width": 12,
+                            "height": 3
+                        },
+                        "clickAction": "OPEN_INSIGHT",
+                        "tileParams": {
+                            "viewKind": "EXPLORE",
+                            "showName": true,
+                            "showDescription": true,
+                            "showCustomFields": true,
+                            "showStorageType": false,
+                            "showMeaning": false,
+                            "showProgressBar": false
+                        },
+                        "autoLoad": true,
+                        "showTitle": "YES",
+                        "title": "Users by Group",
+                        "insightId": "zATSREc",
+                        "insightType": "dataset_table",
+                        "displayMode": "INSIGHT",
+                        "resizeImageMode": "FIT_SIZE"
+                    }
+                ]
+            },
+            "title": "User Information",
+            "showTitle": false
+        },
+        {
+            "id": "XVlHRfX",
+            "grid": {
+                "tiles": [
+                    {
+                        "tileType": "INSIGHT",
+                        "box": {
+                            "top": 4,
+                            "left": 0,
+                            "width": 7,
+                            "height": 4
+                        },
+                        "clickAction": "OPEN_INSIGHT",
+                        "tileParams": {
+                            "viewKind": "EXPLORE",
+                            "showName": true,
+                            "showDescription": true,
+                            "showCustomFields": true,
+                            "showStorageType": false,
+                            "showMeaning": false,
+                            "showProgressBar": false
+                        },
+                        "autoLoad": true,
+                        "showTitle": "YES",
+                        "insightId": "RSo6LJX",
+                        "insightType": "dataset_table",
+                        "displayMode": "INSIGHT",
+                        "resizeImageMode": "FIT_SIZE"
+                    },
+                    {
+                        "tileType": "INSIGHT",
+                        "box": {
+                            "top": 0,
+                            "left": 0,
+                            "width": 12,
+                            "height": 4
+                        },
+                        "clickAction": "DO_NOTHING",
+                        "tileParams": {
+                            "showXAxis": true,
+                            "showYAxis": true,
+                            "showLegend": false,
+                            "showTooltips": true,
+                            "autoPlayAnimation": true
+                        },
+                        "autoLoad": true,
+                        "showTitle": "YES",
+                        "insightId": "LUJPZ9e",
+                        "insightType": "chart",
+                        "displayMode": "INSIGHT",
+                        "resizeImageMode": "FIT_SIZE"
+                    },
+                    {
+                        "tileType": "INSIGHT",
+                        "box": {
+                            "top": 4,
+                            "left": 7,
+                            "width": 5,
+                            "height": 4
+                        },
+                        "clickAction": "OPEN_INSIGHT",
+                        "tileParams": {
+                            "viewKind": "EXPLORE",
+                            "showName": true,
+                            "showDescription": true,
+                            "showCustomFields": true,
+                            "showStorageType": false,
+                            "showMeaning": false,
+                            "showProgressBar": false
+                        },
+                        "autoLoad": true,
+                        "showTitle": "YES",
+                        "title": "Jobs/Scenario Age report",
+                        "insightId": "oSHeEsA",
+                        "insightType": "dataset_table",
+                        "displayMode": "INSIGHT",
+                        "resizeImageMode": "FIT_SIZE"
+                    }
+                ]
+            },
+            "title": "Jobs/Scenarios",
+            "showTitle": false
+        }
+    ],
+    "owner": "martin",
+    "listed": false,
+    "name": "Admin Dashboard",
+    "showGrid": true,
+    "versionTag": {
+        "versionNumber": 16,
+        "lastModifiedBy": {
+            "login": "martin"
+        },
+        "lastModifiedOn": 1683055948430
+    },
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "martin"
+        },
+        "lastModifiedOn": 1682095539706
+    },
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
+    }
+}
