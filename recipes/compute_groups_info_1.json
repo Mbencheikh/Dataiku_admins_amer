@@ -31,18 +31,20 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "martin"
+      "login": "E0196103"
     },
-    "lastModifiedOn": 1680132777455
+    "lastModifiedOn": 1705073530863,
+    "extendedProperties": {}
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "martin"
     },
-    "lastModifiedOn": 1680132777455
+    "lastModifiedOn": 1680132777455,
+    "extendedProperties": {}
   },
   "tags": [],
   "customFields": {},
