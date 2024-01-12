@@ -81,6 +81,14 @@
     {
       "objectId": "compute_user_info",
       "objectType": "RECIPE"
+    },
+    {
+      "objectId": "compute_user_info_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "user_info_copy",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
